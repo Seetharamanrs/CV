@@ -1,0 +1,187 @@
+\documentclass[10 pt, letterpaper]{article}
+
+% Packages:
+\usepackage[
+    ignoreheadfoot, % set margins without considering header and footer
+    top=2 cm, % separation between body and page edge from the top
+    bottom=2 cm, % separation between body and page edge from the bottom
+    left=2 cm, % separation between body and page edge from the left
+    right=2 cm, % separation between body and page edge from the right
+    footskip=1.0 cm, % separation between body and footer
+]{geometry} % for adjusting page geometry
+\usepackage{titlesec} % for customizing section titles
+\usepackage{tabularx} % for making tables with fixed width columns
+\usepackage{array} % tabularx requires this
+\usepackage[dvipsnames]{xcolor} % for coloring text
+\definecolor{primaryColor}{RGB}{0, 0, 0} % define primary color
+\usepackage{enumitem} % for customizing lists
+\usepackage{fontawesome5} % for using icons
+\usepackage{amsmath} % for math
+\usepackage[
+    pdftitle={Seetharaman Radhakrishnan's CV},
+    pdfauthor={Seetharaman Radhakrishnan},
+    pdfcreator={LaTeX},
+    colorlinks=true,
+    urlcolor=primaryColor
+]{hyperref} % for links, metadata, and bookmarks
+\usepackage{changepage} % for one column entries (adjustwidth environment)
+\usepackage{hyperref}
+% Formatting and layout adjustments
+\pagestyle{empty} % no header or footer
+\setcounter{secnumdepth}{0} % no section numbering
+\setlength{\parindent}{0pt} % no indentation
+\setlength{\topskip}{0pt} % no top skip
+\setlength{\columnsep}{0.15cm} % set column separation
+\pagenumbering{gobble} % no page numbering
+
+\titleformat{\section}{\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule]
+
+\titlespacing{\section}{
+    % left space:
+    -1pt
+}{
+    % top space:
+    0.3 cm
+}{
+    % bottom space:
+    0.2 cm
+} % section title spacing
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$} % custom bullet points
+
+% New environment for bullet points
+\newenvironment{highlights}{
+    \begin{itemize}[
+        topsep=0.10 cm,
+        parsep=0.10 cm,
+        partopsep=0pt,
+        itemsep=0pt,
+        leftmargin=0 cm + 10pt
+    ]
+}{
+    \end{itemize}
+} % new environment for highlights
+
+% Header command for personal details
+\newcommand{\header}{
+    \begin{center}
+        \LARGE \textbf{Seetharaman Radhakrishnan} \\[0.2cm]
+        \normalsize
+        \href{mailto:rseetharaman293@gmail.com}{rseetharaman293@gmail.com} \textbar +44 07776293482 \textbar \href{https://linkedin.com/in/seetharaman-r}{LinkedIn} \textbar \href{https://github.com/Seetharamanrs}{GitHub} \\[0.2cm]
+        Sheffield, United Kingdom
+    \end{center}
+}
+
+\begin{document}
+
+% Insert Header
+\header
+
+% Section: Summary
+\section*{Summary}
+AI graduate with strong Python programming skills, specializing in machine learning and data analysis. Experienced in developing data pipelines, implementing algorithms, and integrating APIs. Passionate about leveraging AI to drive impactful solutions in public sector environments.
+\vspace{-0.23cm}
+
+
+% Section: Experience
+\section*{Experience}
+\textbf{Sainsbury's} \hfill{May 2024--Present  Sheffield, UK} \\ Online Assistant
+\vspace{-0.13cm}
+\begin{itemize}
+
+\item \textbf Ensured order accuracy and quality by selecting and preparing customer orders.
+\vspace{-0.23cm}
+\item \textbf Provided customer-centric service, accommodating specific product requests and fostering teamwork in a fast-paced setting.
+\end{itemize}
+\vspace{-0.23cm}
+% Section: Education
+\section*{Education}
+\textbf{Sheffield Hallam University}\textbar 2:1\textbar Merit \hfill{2023-2024} \\ Master of Science in Artificial Intelligence, Sheffield, UK \\
+
+\textbf{PSNA College of Engineering and Technology}\textbar First-Class Honors \hfill{2018-2022} \\Bachelor of Engineering in Electronics and Communication , TamilNadu, India  \\
+\vspace{-0.5cm}
+
+% Section: Projects
+\section*{Projects \textbar \href{https://github.com/Seetharamanrs/projects} {Link}}
+\begin{itemize}
+    \item \textbf{Reconstructing Image from Brain Activity}\textbar Jan 2024: Applied \textbf{deep learning} in PyTorch to reconstruct images using autoencoders from neural data.
+
+    \vspace{-0.23cm}
+    \item \textbf{Handwritten Digit Recognition}\textbar Dec 2023: Developed classification model using \textbf{Random Forest} and \textbf{neural networks} with TensorFlow, Sklearn, NumPy, and Pandas.
+    \vspace{-0.23cm}
+        \item \textbf{Wall Following E-puck Robot}\textbar Dec 2023: Designed \textbf{autonomous navigation algorithms} leveraging sensor fusion and Webots simulation.
+    \vspace{-0.23cm}
+    \item \textbf{Schwa Identification}\textbar May 2024: Engineered \textbf{AI-driven pipeline} to improve ESOL pronunciation using techniques like MFCCs, RMS, ZCR, and formant frequency analysis.
+    \vspace{-0.23cm}
+    \item \textbf{Forecasting Depression in Students}\textbar Sept 2024: Developed models to analyze student depression severity using machine learning, achieving 95.06\% precision with Random Forest.
+    \vspace{-0.23cm}
+    \item \textbf{Heart Diseases Prediction}\textbar{Dec 2023} : Designed a \textbf{predictive analytics} system using \textbf{KNN and Random Forest}, incorporating feature engineering and data preprocessing.
+    
+\end{itemize}
+
+% Section: Core Skills
+\section*{Core Skills}
+
+\begin{itemize}
+    \item \textbf{Programming \& API Development:} Python , REST APIs.
+    \vspace{-0.23cm}
+    \item \textbf{Machine Learning \& Deep Learning:} Neural networks, generative AI, probabilistic generative models, LLMs, Transformer models.
+    \vspace{-0.23cm}
+    \item \textbf{Computer Vision \& Image Processing:} AI-driven image reconstruction, content editing, and signal processing.
+    \vspace{-0.23cm}
+    \item \textbf{Programming \& Frameworks:} Python, TensorFlow, PyTorch, Sklearn, Langchain.
+    \vspace{-0.23cm}
+    \item \textbf{Data Analysis\& Optimization:} Feature Engineering, debugging, data pre-processings, and problem-solving.
+    \item \textbf{Tools \& Version Control:} Git, Google Colab, VS Code, Webots, Overleaf, MATLAB
+
+\end{itemize}
+\vspace{-0.1cm}
+% Section: Certifications
+\section*{Certifications}
+\begin{itemize}
+    \item\textbf{\href{https://coursera.org/share/3c982fd6e2daecbe9351ff039d7acda9}{Python for Data Science, AI \& Development}} \hfill {Feb 2025}\textbar IBM\textbar{}Coursera
+    \vspace{-0.23cm}
+    \item\textbf{\href{https://www.linkedin.com/learning/certificates/d7375d8dd9a47b3b91cd6c67d92fc23df7e8e1ca76574090603c566d80285f07?u=69719634}{
+Building a Personalized Chatbot with OpenAI and LangChain}} \hfill Feb 2025\textbar LinkedIn 
+       \vspace{-0.23cm}
+ 
+    \item\textbf{\href{https://www.linkedin.com/learning/certificates/dba3eeed136b3c9d110aa04dcddc424b2acce45023f6317ceb1664018417fec0?u=69719634}{Hands-On AI: Build a Generative Language Model from Scratch}}\hfill Dec 2024\textbar LinkedIn
+    \vspace{-0.25cm}
+    \item \textbf{\href{https://www.linkedin.com/learning/certificates/922edd76012f6c96c8cc9895ab88d9f348b60843ac59d3f74562bcef4e064862?u=69719634}{Generative AI: Working with Large Language Models}} \hfill March 2024\textbar LinkedIn
+    \vspace{-0.25cm}
+    \item \textbf{\href{https://www.linkedin.com/learning/certificates/6e6de6f7cd742f6c87451ea0a2835a0e46a86eeb0449e242d459604bfc531359?u=69719634}{Introduction to Large Language Models}} \hfill Mar 2024\textbar LinkedIn
+       \vspace{-0.25cm}
+    \item \textbf{\href{https://matlabacademy.mathworks.com/progress/share/certificate.html?id=03cb5d04-7470-437e-84ed-50cc90b0257e&}{Signal Processing Onramp}} \hfill Mar2024\textbar MATLAB Coding
+       \vspace{-0.25cm}
+    \item\textbf{\href{https://www.linkedin.com/learning/certificates/d760710a391cb359911e9966bfc9926d6b82fe2d5e24348c40749d3cc696644b?u=69719634}{MySQL for Non-Programmers}} \hfill Nov 2024\textbar LinkedIn
+\end{itemize}
+
+
+\section{Additional Information}
+\begin{itemize}
+    \item \textbf{Visa Status:} {Graduation Visa valid until December 2027}
+    \item \textbf{Open to Relocation:} Willing to relocate for the right opportunity
+\end{itemize}
+
+
+
+
+
+
+
+\end{document}
+
+
+
+Technical Skills
+Programming Languages: Python, Java, C++
+
+Machine Learning & AI: Neural Networks, Deep Learning, Generative AI, Random Forest, KNN, Transformers
+
+Computer Vision & Image Processing: Autoencoders, Signal Processing, Image Reconstruction
+
+Frameworks & Libraries: TensorFlow, PyTorch, Scikit-learn, NumPy, Pandas, LangChain
+
+Tools & Version Control: Git, Google Colab, VS Code, Webots, Overleaf, MATLAB
+
+Database Management: MySQL
