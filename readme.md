@@ -17,9 +17,9 @@ I specialize in building intelligent systems and data-driven solutions using too
 Feel free to connect with me:
 
 - **Email**: [rseetharaman293@gmail.com]  
-- **LinkedIn**: [www.linkedin.com/in/seetharaman-r]  
-- **GitHub**: [github.com/seetharamanrs]
-
+- **LinkedIn**(www.linkedin.com/in/seetharaman-r)  
+- **GitHub**: [[github.com/seetharamanrs](https://github.com/Seetharamanrs)]
+- **Portfolio**(https://seetharamanrs.github.io/github-portfolio/)
 ---
 
 Thanks for visiting!
